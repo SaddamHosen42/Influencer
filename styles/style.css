@@ -167,45 +167,87 @@
 .btn-right {
     text-align: right;
 }
-#arrow-white{
+
+#arrow-white {
     color: white;
 }
+
 .btn {
     color: rgba(224, 44, 109, 0.87);
     font-weight: 700;
     font-size: 1rem;
     border: none;
 }
-#red-btn{
-    color:rgba(224, 44, 109, 0.87) ;
+
+#red-btn {
+    color: rgba(224, 44, 109, 0.87);
 }
+
 /* Featured products related styles */
-.featured-products{
+.featured-products {
     max-width: 1110px;
     margin: 70px auto;
     justify-content: space-between;
 }
-.products-img{
+
+.products-img {
     max-width: 404px;
 }
-.products-img img{
+
+.products-img img {
     width: 100%;
     height: 100%;
 }
-.products-content{
+
+.products-content {
     max-width: 610px;
     margin: 23px 0;
 }
-.products-title{
+
+.products-title {
     font-size: 2.375rem;
     font-weight: 700;
 }
-.products-description{
+
+.products-description {
     color: rgb(108, 108, 108);
     font-size: 1rem;
     font-weight: 700;
     margin: 16px 0;
 }
+
+/* footer section styles */
+footer {
+    width: 100%;
+}
+
+.footer-container {
+    height: 200px;
+    background: #20263e;
+    align-items: center;
+}
+
+.footer-content {
+    max-width: 262px;
+    color: white;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-description {
+    color: rgb(217, 219, 225);
+}
+
+.icon {
+    margin-top: 10px;
+    justify-content: center;
+    gap: 40px;
+}
+
 /* responsive media query */
 
 /* small device */
@@ -214,7 +256,7 @@
     .navbar,
     .header-container,
     .card-container,
-    .products-content{
+    .products-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -237,6 +279,7 @@
     .header-image img {
         max-width: 200px;
     }
+
     .sponsor {
         flex-wrap: wrap;
         justify-content: center;
@@ -247,9 +290,11 @@
     .sponsor img {
         max-width: 60px;
     }
-    .products-img img{
+
+    .products-img img {
         max-width: 350px;
     }
+
     .card-container {
         display: flex;
         flex-direction: colomn;
@@ -263,10 +308,15 @@
     .products-img {
         text-align: center;
     }
+
+    footer {
+        width: 100%;
+    }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+
     .header-container,
     .featured-products {
         flex-direction: column-reverse;
@@ -287,5 +337,9 @@
     .btn-right,
     .featured-products {
         text-align: center;
+    }
+
+    footer {
+        width: 100%;
     }
 }
