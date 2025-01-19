@@ -38,6 +38,7 @@
     background: rgb(224, 44, 109);
     padding: 10px 24px;
     cursor: pointer;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
@@ -166,14 +167,45 @@
 .btn-right {
     text-align: right;
 }
-
+#arrow-white{
+    color: white;
+}
 .btn {
     color: rgba(224, 44, 109, 0.87);
     font-weight: 700;
     font-size: 1rem;
     border: none;
 }
-
+#red-btn{
+    color:rgba(224, 44, 109, 0.87) ;
+}
+/* Featured products related styles */
+.featured-products{
+    max-width: 1110px;
+    margin: 70px auto;
+    justify-content: space-between;
+}
+.products-img{
+    max-width: 404px;
+}
+.products-img img{
+    width: 100%;
+    height: 100%;
+}
+.products-content{
+    max-width: 610px;
+    margin: 23px 0;
+}
+.products-title{
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+.products-description{
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 16px 0;
+}
 /* responsive media query */
 
 /* small device */
@@ -181,17 +213,20 @@
 
     .navbar,
     .header-container,
-    .card-container {
+    .card-container,
+    .products-content{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .header-container {
+    .header-container,
+    .featured-products {
         flex-direction: column-reverse;
     }
 
-    .header-title {
+    .header-title,
+    .products-title {
         font-size: 1.75rem;
     }
 
@@ -202,7 +237,6 @@
     .header-image img {
         max-width: 200px;
     }
-
     .sponsor {
         flex-wrap: wrap;
         justify-content: center;
@@ -213,11 +247,9 @@
     .sponsor img {
         max-width: 60px;
     }
-
-    .header-content {
-        text-align: center;
+    .products-img img{
+        max-width: 350px;
     }
-
     .card-container {
         display: flex;
         flex-direction: colomn;
@@ -225,16 +257,21 @@
         gap: 15px;
     }
 
-    .btn-right {
+    .btn-right,
+    .header-content,
+    .products-content,
+    .products-img {
         text-align: center;
     }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .header-container {
+    .header-container,
+    .featured-products {
         flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
     }
 
     .navbar {
@@ -247,7 +284,8 @@
         justify-content: center;
     }
 
-    .btn-right {
+    .btn-right,
+    .featured-products {
         text-align: center;
     }
 }
